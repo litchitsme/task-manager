@@ -59,3 +59,4 @@ export class AppComponent {
   get progress() {
     return (this.completedTasks / this.tasks.length) * 100;
   }
+}
