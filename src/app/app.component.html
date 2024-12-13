@@ -1,19 +1,19 @@
 <div class="task-manager">
   <!-- Two-way data binding example with ngModel -->
   <div class="task-input">
-    <input 
+    <input class="form-control"
       [(ngModel)]="newTaskTitle" 
       placeholder="Enter new task"
       (keyup.enter)="addTask()"
     >
     
-    <select [(ngModel)]="selectedPriority">
+    <select [(ngModel)]="selectedPriority" class="form-control">
       <option value="low">Low Priority</option>
       <option value="medium">Medium Priority</option>
       <option value="high">High Priority</option>
     </select>
 
-    <button (click)="addTask()">Add Task</button>
+    <button (click)="addTask()" class="form-control">Add Task</button>
   </div>
 
   <!-- Using @if with @else -->
